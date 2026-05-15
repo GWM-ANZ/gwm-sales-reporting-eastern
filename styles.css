@@ -129,6 +129,82 @@ td { border-bottom: 1px solid #EFEFEF; padding: 8px; vertical-align: middle; }
 .model-table { min-width: 760px; }
 .row-total, th.row-total, td.row-total { display: none !important; }
 
+
+/* v2.5.0 Eastern desktop refinement: grouped enquiry columns only. Mobile accordion unchanged. */
+@media (min-width: 721px) {
+  .model-table {
+    table-layout: fixed;
+    min-width: 980px;
+  }
+
+  .model-table .model-col { width: 160px; }
+  .model-table .enquiry-col { width: 82px; }
+  .model-table .activity-col { width: 118px; }
+
+  .model-table th {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .model-table .model-head {
+    text-align: left;
+    width: 160px;
+  }
+
+  .model-table .enquiry-group-head {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.22);
+    padding-top: 9px;
+    padding-bottom: 7px;
+    letter-spacing: .18em;
+  }
+
+  .model-table .enquiry-sub-head {
+    background: #111;
+    color: rgba(255,255,255,.92);
+    text-align: center;
+    padding: 8px 4px 9px;
+    font-size: 8px;
+    letter-spacing: .13em;
+  }
+
+  .model-table .enquiry-sub-end,
+  .model-table .metric-net_enquiry {
+    border-right: 2px solid #BEBEBE;
+  }
+
+  .model-table .metric-cell {
+    text-align: center;
+  }
+
+
+  .model-table .metric-walk_in_enquiry,
+  .model-table .metric-phone_enquiry,
+  .model-table .metric-net_enquiry {
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #F2F2F2;
+  }
+
+  .model-table .metric-walk_in_enquiry .grid-input,
+  .model-table .metric-phone_enquiry .grid-input,
+  .model-table .metric-net_enquiry .grid-input {
+    width: 66px;
+    min-width: 66px;
+    max-width: 66px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #F2F2F2;
+    border-color: #C7C7C7;
+  }
+
+  .model-table .activity-head {
+    text-align: center;
+  }
+}
+
 @media (max-width: 720px) {
   .brand-top { justify-content: space-between; padding: 6px 14px; }
   .brand-main { display: block; padding: 12px 14px; }
