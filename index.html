@@ -129,45 +129,62 @@
 <div id="dealerInfoModal" class="modal-backdrop" hidden>
   <div class="dealer-info-modal" role="dialog" aria-modal="true" aria-labelledby="dealerInfoTitle">
     <button type="button" class="modal-close" id="closeDealerInfo" aria-label="Close dealer information">×</button>
-    <div class="modal-kicker">Dealer handover guide</div>
-    <h2 id="dealerInfoTitle">How to use the daily sales report</h2>
-    <p class="modal-lead">This form captures completed dealer activity by model. Before 5:00pm, submit yesterday's completed activity. From 5:00pm, submit today's completed activity only when the day is ready to close out.</p>
+    <div class="modal-kicker">Dealer Handover Guide</div>
+    <h2 id="dealerInfoTitle">How to use the Daily Sales Report</h2>
+    <p class="modal-lead">This form captures completed dealer activity by model.</p>
+    <p class="modal-lead">Before 5:00pm, submit yesterday’s completed activity.<br>From 5:00pm, you may submit today’s completed activity once the day is ready to close.</p>
 
     <div class="info-grid">
       <section>
         <h3>1. What day to report</h3>
-        <p>Before 5:00pm, submit yesterday's completed activity. From 5:00pm, you can submit today's completed activity if the day is ready to close out. If more activity occurs after submitting, resubmit the full corrected day. Do not enter future activity or expected activity.</p>
+        <p>Before 5:00pm, report yesterday’s completed activity.</p>
+        <p>From 5:00pm, you may report today’s completed activity if the sales day is effectively complete.</p>
+        <p>Only report completed activity for the selected report date. Do not enter future activity, expected activity, or activity that has not yet occurred.</p>
+        <p>If additional activity occurs after you have submitted, resubmit the full corrected day for the same dealer and date.</p>
       </section>
       <section>
         <h3>2. What each activity means</h3>
         <ul>
-          <li><b>Walk-in:</b> customer enquiry made in person at the dealership.</li>
-          <li><b>Phone:</b> customer enquiry received by phone.</li>
-          <li><b>Net:</b> customer enquiry received online, including website, OEM leads, Carsales, Autotrader, social, email, or other digital lead sources.</li>
-          <li><b>Enquiry rule:</b> only enter genuine customer enquiries requiring sales follow-up. Do not count the same customer enquiry twice. If a customer submits a web lead and then calls, count it under the original source unless the dealership treats it as a new separate enquiry.</li>
-          <li><b>Test drives:</b> completed test drives.</li>
-          <li><b>Sold:</b> new vehicle customer orders or contracts written.</li>
-          <li><b>Fleet +5:</b> only enter this section when you have completed a single fleet deal to one customer with 5 or more vehicles. This keeps normal retail run rates unaffected.</li>
-          <li><b>Demo sold:</b> demonstrator vehicles sold. Do not count the same unit again as Sold.</li>
-          <li><b>Important:</b> if one customer enquires, test drives and signs on the same report date, record one in each completed stage.</li>
+          <li><b>Walk-in:</b> A customer enquiry made in person at the dealership.</li>
+          <li><b>Phone:</b> A customer enquiry received by phone.</li>
+          <li><b>Net:</b> A customer enquiry received online from dealer-managed sources, including dealer website, Carsales, Autotrader, social media, email, or other digital lead sources. Exclude GWM direct leads unless instructed otherwise.</li>
+          <li><b>Enquiry rule:</b> Only enter genuine customer enquiries that require sales follow-up. Do not count the same customer enquiry twice. If a customer submits an online lead and then calls, record the enquiry against the original source unless the dealership treats it as a separate new enquiry.</li>
+          <li><b>Test drives:</b> Completed test drives only. Do not include future bookings.</li>
+          <li><b>Sold:</b> New vehicle customer orders or contracts written on the report date.</li>
+          <li><b>Fleet +5:</b> Only use this section for a single fleet deal to one customer entity involving 5 or more vehicles. Do not include normal retail orders here.</li>
+          <li><b>Demo sold:</b> Demonstrator vehicles sold on the report date.</li>
+          <li><b>Important:</b> If one customer enquires, test drives, and signs on the same report date, record one entry in each completed stage.</li>
         </ul>
       </section>
       <section>
         <h3>3. How to enter data</h3>
-        <p>On desktop, use the model grid. On mobile, open each activity section first, then enter the number against each model. Blank fields submit as zero.</p>
+        <p>On desktop, enter activity directly into the model grid.</p>
+        <p>On mobile, open the relevant activity section first, then enter the number against each model.</p>
+        <p>Blank fields will submit as zero.</p>
       </section>
       <section>
         <h3>4. Corrections</h3>
-        <p>To fix a mistake, submit the full corrected day again for the same dealer and date. The latest version becomes active and the earlier version stays in the audit history. Do not submit only the difference.</p>
+        <p>To correct an error, resubmit the full corrected day for the same dealer and report date.</p>
+        <p>The latest submission becomes the active version. The earlier submission remains in the audit history.</p>
+        <p>Do not submit only the difference.</p>
       </section>
       <section>
         <h3>5. Before submitting</h3>
-        <p>Check dealer, submitted-by name, report date and top totals. If everything is zero, only continue if it was genuinely a zero-activity day.</p>
+        <p>Before submitting, check:</p>
+        <ul>
+          <li>Dealer</li>
+          <li>Submitted-by name</li>
+          <li>Report date</li>
+          <li>Top totals</li>
+        </ul>
+        <p>If all totals are zero, only continue if it was genuinely a zero-activity day.</p>
       </section>
       <section>
         <h3>6. What not to do</h3>
         <ul>
           <li>Do not close the page until the Report received message appears.</li>
+          <li>Do not refresh, exit, or resubmit while the report is still processing.</li>
+          <li>Do not enter estimates, forecasts, or expected future activity.</li>
         </ul>
       </section>
     </div>
