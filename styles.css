@@ -172,7 +172,7 @@ td { border-bottom: 1px solid #EFEFEF; padding: 8px; vertical-align: middle; }
 
   .model-table .enquiry-sub-end,
   .model-table .metric-net_enquiry {
-    border-right: 2px solid #BEBEBE;
+    border-right: none;
   }
 
   .model-table .metric-cell {
@@ -185,7 +185,7 @@ td { border-bottom: 1px solid #EFEFEF; padding: 8px; vertical-align: middle; }
   .model-table .metric-net_enquiry {
     padding-left: 4px;
     padding-right: 4px;
-    background: #F2F2F2;
+    background: transparent;
   }
 
   .model-table .metric-walk_in_enquiry .grid-input,
@@ -196,8 +196,10 @@ td { border-bottom: 1px solid #EFEFEF; padding: 8px; vertical-align: middle; }
     max-width: 66px;
     padding-left: 4px;
     padding-right: 4px;
-    background: #F2F2F2;
-    border-color: #C7C7C7;
+    background: #ECECEC;
+    border: none;
+    box-shadow: none;
+    outline: none;
   }
 
   .model-table .activity-head {
